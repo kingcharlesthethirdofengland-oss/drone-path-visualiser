@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ILP Drone Flight Simulator</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body class="dark">
+
+    <div id="controlPanel">
+        <h2>Drone Simulator</h2>
+
+        <input type="file" id="fileInput" />
+
+        <div class="row">
+            <button id="playBtn">Play</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+
+        <label>Speed:</label>
+        <input type="range" id="speedSlider" min="60" max="300" value="120">
+
+        <p id="distanceDisplay">Distance: 0 m</p>
+        <p id="deliveryDisplay">Deliveries: 0</p>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
